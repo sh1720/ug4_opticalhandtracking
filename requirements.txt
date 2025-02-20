@@ -1,0 +1,10 @@
+# Build Dependencies for visualise_mano
+
+torch==2.4.1
+smplx==0.1.38
+numpy==1.21.1
+trimesh==3.23.5
+pyrender==0.1.45
+matplotlib==3.4.4
+pickle-mixin==1.0.2
+tqdm==4.64.1
