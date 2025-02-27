@@ -1,14 +1,16 @@
+#This code takes RGB data and maps it to the depth maps given camera intrinsics. It uses open3d to visualise the image
+
 import numpy as np
 import cv2
 import open3d as o3d
 
-depthScale = 0.00012498664727900177  # Depth scale from HO3D dataset
+depthScale = 0.00012498664727900177  # Depth scale from HO3D dataset (given)
 
-depth_image_path = "D:/FYP Datasets/HO3D_v2/train/ABF10/depth/0000.png"  # Replace with your depth image
-rgb_image_path = "D:/FYP Datasets/HO3D_v2/train/ABF10/rgb/0000.png"  # Replace with your RGB image
+depth_image_path = "D:/FYP Datasets/HO3D_v2/train/ABF10/depth/0000.png"  # Location of depth image
+rgb_image_path = "D:/FYP Datasets/HO3D_v2/train/ABF10/rgb/0000.png"  # Location of depth image
 
 # Load images
-depth_image = cv2.imread(depth_image_path, cv2.IMREAD_UNCHANGED)  # Load depth (single channel)
+depth_image = cv2.imread(depth_image_path, cv2.IMREAD_UNCHANGED)  # Load depth 
 rgb_image = cv2.imread(rgb_image_path)  # Load RGB image
 
 # Convert RGB from OpenCV BGR to RGB

@@ -1,3 +1,5 @@
+#This code takes the annotated information to create the mano model
+
 import torch 
 import smplx 
 import numpy as np 
@@ -8,7 +10,7 @@ import pickle as pickle
 from tqdm import tqdm
 
 MANO_MODEL_PATH = "ug4_opticalhandtracking/mano_models/MANO_RIGHT.pkl"
-pkl_file_path = "D:/FYP Datasets/HO3D_v2/train/ABF10/meta/0000.pkl"
+pkl_file_path = "D:/FYP Datasets/HO3D_v2/train/ABF10/meta/0000.pkl" #Replace with file 
 
 # Load the .pkl file with a progress bar
 with open(pkl_file_path, 'rb') as f:
